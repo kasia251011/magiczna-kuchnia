@@ -26,6 +26,7 @@ const GallerySection = () => {
                 className="gallery-img"
                 src={img}
                 alt={alt}
+                placeholder="blur"
                 onClick={() => {
                   setOpen(true);
                   setIndex(id);
@@ -40,6 +41,7 @@ const GallerySection = () => {
                 className="gallery-img"
                 src={img}
                 alt={alt}
+                placeholder="blur"
                 onClick={() => {
                   setOpen(true);
                   setIndex(id);
@@ -53,6 +55,7 @@ const GallerySection = () => {
                 key={index}
                 className="gallery-img"
                 src={img}
+                placeholder="blur"
                 alt={alt}
                 onClick={() => {
                   setOpen(true);
@@ -72,6 +75,7 @@ const GallerySection = () => {
                 className="gallery-img"
                 src={IMAGES[8].img}
                 alt={IMAGES[8].alt}
+                placeholder="blur"
               />
               <div className="absolute top-0 left-0 w-full h-full bg-[#0009] rounded-lg flex justify-center items-center">
                 <span className="text-white text-5xl">

@@ -5,10 +5,7 @@ import IMAGE_BG from "@/assets/hero-bg.webp";
 import Logo from "@/components/Logo";
 
 const HeroSection = () => (
-  <header
-    style={{ backgroundImage: `url(${IMAGE_BG.src})` }}
-    className={`relative header bg-cover bg-center h-screen text-white `}
-  >
+  <header className={`relative header  h-screen text-white `}>
     <div className="relative container h-full flex flex-col justify-around z-10">
       <div>
         <p className="font-sacramento text-4xl mt-20">Monika Kołucka</p>
@@ -34,6 +31,12 @@ const HeroSection = () => (
         </Link>
       </div>
     </div>
+    <Image
+      src={IMAGE_BG}
+      placeholder="blur"
+      alt="Katering Monika Kołucka"
+      className="absolute top-0 w-full h-full object-cover"
+    />
     <div className="top-0 absolute w-full h-full bg-[#0000008f]" />
   </header>
 );

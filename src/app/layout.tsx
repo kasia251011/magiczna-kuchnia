@@ -6,6 +6,8 @@ import {
   FONT_SACRAMENTO,
   FONT_ANTONIO,
 } from "@/utils/fonts";
+import FooterSection from "@/sections/FooterSection";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Magiczna Kuchnia Monika Kołucka - Catering | Łowicz i okolice",
@@ -50,7 +52,9 @@ export default function RootLayout({
       <body
         className={`${FONT_GALADA.variable} ${FONT_INTER.variable} ${FONT_SACRAMENTO.variable} ${FONT_ANTONIO.variable} antialiased`}
       >
+        <Navbar />
         {children}
+        <FooterSection />
       </body>
     </html>
   );

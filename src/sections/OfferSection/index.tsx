@@ -1,16 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import PHONE from "@/assets/icons/phone.svg";
-import OFFER_IMG from "@/assets/offer-bg.webp";
+import OFFER_IMG from "@/assets/offer.webp";
 
 const OfferSection = () => (
   <section id="oferta" className="container">
     <div className="grid grid-cols-1 md:grid-cols-2 border-white border-solid border-2 p-4  rounded-lg">
-      <div
-        style={{ backgroundImage: `url(${OFFER_IMG.src})` }}
-        className="relative bg-[url('/assets/offer-bg.webp')] rounded-lg h-full bg-cover min-h-52"
-      >
-        <div className="top-0 absolute w-full h-full bg-[#00000033] rounded-lg"></div>
+      <div className="relative rounded-lg h-full  min-h-52">
+        <Image
+          src={OFFER_IMG}
+          alt="tło"
+          className="absolute top-0 w-full h-full object-cover rounded-lg"
+          placeholder="blur"
+        />
       </div>
 
       <div className="p-5 sm:p-10">
