@@ -120,6 +120,6 @@ h4 {
   }
 
   .gallery-img {
-    @apply h-auto max-w-full rounded-lg;
+    @apply h-auto w-full max-w-none rounded-lg cursor-pointer;
   }
 }
