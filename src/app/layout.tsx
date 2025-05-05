@@ -6,12 +6,6 @@ import {
   FONT_SACRAMENTO,
   FONT_ANTONIO,
 } from "@/utils/fonts";
-import HeroSection from "@/sections/HeroSection";
-import ServiceSection from "@/sections/ServiceSection";
-import OfferSection from "@/sections/OfferSection";
-import GallerySection from "@/sections/GallerySection";
-import FooterSection from "@/sections/FooterSection";
-import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Magiczna Kuchnia Monika Kołucka - Catering | Łowicz i okolice",
@@ -46,7 +40,9 @@ export const metadata: Metadata = {
   twitter: {},
 };
 
-export default function RootLayout({}: Readonly<{
+export default function RootLayout({
+  children,
+}: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
@@ -54,12 +50,7 @@ export default function RootLayout({}: Readonly<{
       <body
         className={`${FONT_GALADA.variable} ${FONT_INTER.variable} ${FONT_SACRAMENTO.variable} ${FONT_ANTONIO.variable} antialiased`}
       >
-        <Navbar />
-        <HeroSection />
-        <ServiceSection />
-        <OfferSection />
-        <GallerySection />
-        <FooterSection />
+        {children}
       </body>
     </html>
   );
